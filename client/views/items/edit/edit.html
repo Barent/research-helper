@@ -1,0 +1,141 @@
+<template name="ItemsEdit">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<div id="page_menu" class="pull-right">
+				</div>
+			</div>
+		</div>
+		{{> ItemsEditEditForm}}
+	</div>
+</template>
+
+<template name="ItemsEditEditForm">
+	<div id="items-edit-edit-form" class="">
+		<h2 id="component-title">
+			Edit item
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}		
+		
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-id">
+				<label for="Id">
+					Id
+				</label>
+				<div class="input-div">
+					<input type="text" name="Id" value="{{item.Id}}" class="form-control" autofocus="autofocus" required="required">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-name">
+				<label for="Name">
+					Name
+				</label>
+				<div class="input-div">
+					<input type="text" name="Name" value="{{item.Name}}" class="form-control">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-observation_one">
+				<label for="Observation_One">
+					Observation_One
+				</label>
+				<div class="input-div">
+					<input type="text" name="Observation_One" value="{{item.Observation_One}}" class="form-control">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-observation_two">
+				<label for="Observation_Two">
+					Observation_Two
+				</label>
+				<div class="input-div">
+					<input type="text" name="Observation_Two" value="{{item.Observation_Two}}" class="form-control">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-observation_three">
+				<label for="Observation_Three">
+					Observation_Three
+				</label>
+				<div class="input-div">
+					<input type="text" name="Observation_Three" value="{{item.Observation_Three}}" class="form-control">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-observation_four">
+				<label for="Observation_Four">
+					Observation_Four
+				</label>
+				<div class="input-div">
+					<input type="text" name="Observation_Four" value="{{item.Observation_Four}}" class="form-control">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-observation_five">
+				<label for="Observation_Five">
+					Observation_Five
+				</label>
+				<div class="input-div">
+					<input type="text" name="Observation_Five" value="{{item.Observation_Five}}" class="form-control">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-notes">
+				<label for="Notes">
+					Notes
+				</label>
+				<div class="input-div">
+					<textarea class="form-control" name="Notes">{{item.Notes}}</textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

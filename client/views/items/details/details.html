@@ -1,0 +1,124 @@
+<template name="ItemsDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<div id="page_menu" class="pull-right">
+				</div>
+			</div>
+		</div>
+		{{> ItemsDetailsDetailsForm}}
+	</div>
+</template>
+
+<template name="ItemsDetailsDetailsForm">
+	<div id="items-details-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="back">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Details
+		</h2>
+		<form role="form" class="form-horizontal">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}		
+		
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-id">
+				<label for="Id" class="col-sm-3 control-label">
+					Id
+				</label>
+				<div class="input-div col-sm-9">
+					<p class="form-control-static">
+						{{item.Id}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-name">
+				<label for="Name" class="col-sm-3 control-label">
+					Name
+				</label>
+				<div class="input-div col-sm-9">
+					<p class="form-control-static">
+						{{item.Name}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-observation_one">
+				<label for="Observation_One" class="col-sm-3 control-label">
+					Observation_One
+				</label>
+				<div class="input-div col-sm-9">
+					<p class="form-control-static">
+						{{item.Observation_One}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-observation_two">
+				<label for="Observation_Two" class="col-sm-3 control-label">
+					Observation_Two
+				</label>
+				<div class="input-div col-sm-9">
+					<p class="form-control-static">
+						{{item.Observation_Two}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-observation_three">
+				<label for="Observation_Three" class="col-sm-3 control-label">
+					Observation_Three
+				</label>
+				<div class="input-div col-sm-9">
+					<p class="form-control-static">
+						{{item.Observation_Three}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-observation_four">
+				<label for="Observation_Four" class="col-sm-3 control-label">
+					Observation_Four
+				</label>
+				<div class="input-div col-sm-9">
+					<p class="form-control-static">
+						{{item.Observation_Four}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-observation_five">
+				<label for="Observation_Five" class="col-sm-3 control-label">
+					Observation_Five
+				</label>
+				<div class="input-div col-sm-9">
+					<p class="form-control-static">
+						{{item.Observation_Five}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-notes">
+				<label for="Notes" class="col-sm-3 control-label">
+					Notes
+				</label>
+				<div class="input-div col-sm-9">
+					<p class="form-control-static">
+						{{item.Notes}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div col-sm-9 col-sm-offset-3">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
