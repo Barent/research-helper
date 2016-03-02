@@ -1,0 +1,9 @@
+{ "galaxy.meteor.com": 
+    { "env": 
+        { 
+          "MONGO_URL": "", 
+          "MONGO_OPLOG_URL": "" 
+        }
+    }
+}
+

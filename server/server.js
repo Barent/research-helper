@@ -16,7 +16,7 @@ Meteor.startup(function() {
 
 	    Accounts.createUser({
 	        username: 'RIAdmin',
-	        email: '',
+	        email: 'nbc5004@gmail.com',
 	        password: '',
 	        roles: ["admin"],
 	        profile: {
@@ -25,9 +25,9 @@ Meteor.startup(function() {
 	    });
 	}
 
-	if(Accounts.findUserByEmail('') != null){
+	if(Accounts.findUserByEmail('nbc5004@gmail.com') != null){
 		//get user object
-		var userObject = Accounts.findUserByEmail('');
+		var userObject = Accounts.findUserByEmail('nbc5004@gmail.com');
 		//check roles array for admin
 		var rolesArray = userObject.roles;
 		if(rolesArray[0] !== 'admin'){

@@ -9,9 +9,26 @@
 				</div>
 			</div>
 		</div>
-		<p id="page_text">
+		{{> HomePublicHomeJumbotron}}
+	
+	</div>
+</template>
+
+<template name="HomePublicHomeJumbotron">
+	<div class="jumbotron ">
+		<div id="content" class="container">
+			<h1 id="component-title">
+				Research Helper
+			</h1>
+				<p id="jumbotron-text">
 			This is an applicaiton for simple research data collection from mobile devices. Use it to record data and then export it to excel. Please delete data once you are finished.
 		</p>
+			<p id="jumbotron-button">
+				<a href="#" class="btn btn-primary btn-lg" role="button">
+					Continue &raquo;
+				</a>
+			</p>
+		</div>
 	</div>
 </template>
 
