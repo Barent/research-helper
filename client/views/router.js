@@ -11,7 +11,8 @@ var publicRoutes = [
 	"login",
 	"register",
 	"forgot_password",
-	"reset_password"
+	"reset_password",
+	"terms_of_use"
 ];
 
 var privateRoutes = [
@@ -191,4 +192,5 @@ Router.map(function () {
 	this.route("items.insert", {path: "/items/insert", controller: "ItemsInsertController"});
 	this.route("items.details", {path: "/items/details/:Id", controller: "ItemsDetailsController"});
 	this.route("items.edit", {path: "/items/edit/:Id", controller: "ItemsEditController"});
+	this.route("terms_of_use", {path: "/terms_of_use"});
 });
