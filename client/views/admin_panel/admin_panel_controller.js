@@ -19,6 +19,7 @@ this.AdminPanelController = RouteController.extend({
 		
 
 		var subs = [
+			Meteor.subscribe("users")
 		];
 		var ready = true;
 		_.each(subs, function(sub) {
@@ -32,7 +33,8 @@ this.AdminPanelController = RouteController.extend({
 		
 
 		return {
-			params: this.params || {}
+			params: this.params || {},
+			users: Meteor.users.find({}, {})
 		};
 		/*DATA_FUNCTION*/
 	},
